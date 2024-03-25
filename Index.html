@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>
+            Role of air in Combustion and Respiration
+        </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+
+        <style>
+            .body{
+                background-color: rgb(100, 125, 23);
+            }
+                .button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: grey;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+            .text{
+                color: rgb(39, 84, 161);
+            }
+        </style>
+    <script>
+        function calculateForce() {
+            var mass = parseFloat(document.getElementById('mass').value);
+            var acceleration = parseFloat(document.getElementById('acceleration').value);
+            var force = mass * acceleration;
+            document.getElementById('result').innerHTML = " FORCE  = " + force + " N";
+            
+        }
+    </script>
+    </head>
+    <body class="body">
+        <br>
+        <center>
+            <img src="swecha.png" width="250px" height="100px">
+        </center>
+        <div class="container">
+            <div class="row">
+            <div class="col">            
+        <center>
+        <h1 class="text">
+           <b>Role of Air in Combustion and Respiration</b>
+        </h1>
+        <p style="border-style:ridge;"></p>
+        </center>
+        <div class="col-xs-6">
+            <center>
+            <h2><b>COMBUSTION</b></h2>
+        
+            
+        <img src="candle_off.jpeg"id="pushing gif" height="250px" width="420px">
+        <br><br>
+        <button onclick="push()" class="button ">ON</button>
+        <button onclick="stop()"class="button">OFF</button>
+        <br>
+        <br>
+        <script type="text/javascript"> 
+            function push(){
+                var x1=document.getElementById("pushing gif")
+                x1.src="candle_on.jpeg"
+            }
+            function stop()
+            {
+            var x2=document.getElementById("pushing gif")
+            x2.src="candle_off.jpeg"
+            }
+        </script>
+        </center>
+        
+    </div>
+    <div class="col-xs-6">
+        <center>
+            <h2><b>RESPIRATION</b></h2>
+       
+    <img src="respiration.jpeg"id="pulling gif" height="250px" width="420px">
+    <br><br>
+    <button onclick="pull()" class="button ">Breathe IN</button>
+    <button onclick="Stop()" class="button ">Breathe OUT </button>
+    <br>
+    <br>
+    <script type="text/javascript">
+        function pull(){
+            var x1=document.getElementById("pulling gif")
+            x1.src="breathe_in.jpeg"
+        }
+        function Stop(){
+            var x2=document.getElementById("pulling gif")
+            x2.src="breathe_out.jpeg"
+        }
+    </script>
+    <br>
+     </center>
+            </div>
+
+        <p><b><center>Simple way to Represent Combustion and Respiration in reactions </center></b></p>
+        <center>
+            <img src="air.jpeg"id="pulling gif" height="250px" width="420px">
+    <br><br>
+            </center>
+    </body>
+</html>
